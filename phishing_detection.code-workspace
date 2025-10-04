@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Users/MUSKAN/Downloads/phishing_detection_dataset.csv"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "phishing_detection_dataset.csv"
+	}
+}

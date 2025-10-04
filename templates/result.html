@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Result - Phishing Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>Result</h1>
+    <p><strong>URL:</strong> {{ url }}</p>
+    <p><strong>Status:</strong>
+      <span class="{{ 'danger' if result == 'Phishing' else 'safe' }}">{{ result }}</span>
+    </p>
+    {% if probability is not none %}
+      <p><strong>Confidence:</strong> {{ (probability * 100) | round(2) }}%</p>
+    {% endif %}
+    <a href="/" class="back">Check another URL</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 50px;
+  border-radius: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #6c63ff;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5753c9;
+}
+
+a {
+  color: #ffd700;/* style.css - simple modern look */
+:root{
+  --bg1: #0f172a;
+  --bg2: #0b1223;
+  --card: rgba(255,255,255,0.06);
+  --accent: #7c5cff;
+  --accent2:#00d4ff;
+  --safe: #18d18d;
+  --danger:#ff6b6b;
+  --text: #e6eef8;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg,var(--bg1),var(--bg2));
+  color:var(--text);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  padding:20px;
+}
+
+.card{
+  width:100%;
+  max-width:560px;
+  background:var(--card);
+  border-radius:16px;
+  padding:28px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  text-align:center;
+  background-color: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(6px); /* Safari (needs webkit) */
+  backdrop-filter: blur(6px); 
+}
+
+h1{margin:0 0 8px;font-size:26px}
+.subtitle{margin:0 0 20px;color:rgba(230,238,248,0.8)}
+
+input[type="text"]{
+  width:100%;
+  padding:14px 16px;
+  border-radius:10px;
+  border: none;
+  margin-bottom:14px;
+  font-size:15px;
+}
+
+.btn{
+  display:inline-block;
+  background: linear-gradient(90deg,var(--accent),var(--accent2));
+  color:#fff;
+  padding:12px 20px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  font-size:15px;
+  box-shadow: 0 6px 18px rgba(124,92,255,0.25);
+}
+
+.note{margin-top:16px;font-size:13px;color:rgba(230,238,248,0.7)}
+
+.safe{color:var(--safe);font-weight:700}
+.danger{color:var(--danger);font-weight:700}
+
+.back{
+  display:inline-block;margin-top:16px;color:#ffd86b;text-decoration:none;font-weight:600
+}
+
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
