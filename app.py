@@ -244,25 +244,26 @@ def stats():
         'status': 'operational' if MODEL else 'model not loaded'
     })
 
+# Load model on startup (runs even with gunicorn)
+load_model()
+
 if __name__ == '__main__':
     print("="*70)
     print("PHISHING DETECTION SYSTEM")
     print("="*70)
     print("\nStarting server...")
-
-    if load_model():
+    
+    if MODEL is not None:
         print(f"Features loaded: {len(FEATURE_NAMES)}")
         print(f"Whitelist domains: {len(WHITELIST)}")
         print("\n✅ System ready!")
-        # Read port from environment (Railway / Heroku style)
+        
+        # Only for local development
         import os
         port = int(os.environ.get("PORT", 5000))
-        host = "0.0.0.0"
-        print(f"\n📱 Open in browser (locally): http://localhost:{port}")
+        print(f"\n📱 Open in browser: http://localhost:{port}")
         print("="*70)
-        # NOTE: turn off debug in production
-        app.run(debug=False, host=host, port=port)
+        app.run(debug=True, host="0.0.0.0", port=port)
     else:
         print("\n❌ Failed to load model!")
-        print("Please train the model first using: python train_model.py")
         print("="*70)
