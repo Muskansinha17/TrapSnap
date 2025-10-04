@@ -49,12 +49,13 @@ python app.py
 
 open your browser at http://localhost:5000
 
-**Deployment**
-
+5 **Deployment**
 Deployed on Railway or any Python-compatible cloud service.
 
 Requires Procfile with the following content:
 
 web: python app.py
 
+This project is licensed under the MIT License – see LICENSE
+for details.
 
