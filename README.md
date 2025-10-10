@@ -1,4 +1,6 @@
 # Trapsnap - Phishing URL Detection Web App
+CHECK ON WEBSITE (https://trapsnap.onrender.com)
+Startup time can be slow when waking up as App may go to sleep after 15 mins of inactivity. 
 
 **Trapsnap** is a Flask-based web application that detects phishing URLs using a combination of **machine learning** and **pattern-based analysis**. Users can check individual URLs or batch-check multiple URLs at once. The system also includes a whitelist of trusted domains and advanced checks for suspicious patterns, domain spoofing, and character substitutions.
 
@@ -21,7 +23,7 @@
 - **Frontend:** HTML, CSS  
 - **ML Libraries:** scikit-learn, pandas, numpy  
 - **Other Libraries:** tldextract, beautifulsoup4, requests  
-- **Deployment:** Railway (or any cloud platform)  
+- **Deployment:** Render (or any cloud platform)  
 
 ---
 
